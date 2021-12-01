@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Project {
+    public static void main(String[] args) {
+        System.out.println("My Financial Turnover");
+        Scanner myScanner = new Scanner(System.in);
+        int monthlyIncome, loanPayment, currentExpenses;
+        System.out.println("Please enter your monthly income:");
+        monthlyIncome = myScanner.nextInt();
+        System.out.println("Please enter your loan payment:");
+        loanPayment = myScanner.nextInt();
+        System.out.println("Please enter your current expenses:");
+        currentExpenses = myScanner.nextInt();
+        int result = monthlyIncome - (loanPayment + currentExpenses);
+        System.out.println("The left over money equals to: " + result);
+        myScanner.close();
+    }
+}
