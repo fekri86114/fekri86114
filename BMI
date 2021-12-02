@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Extract{
+    public static void main(String[] args) {
+        System.out.println("Your BMI");
+        Scanner yourBMI = new Scanner(System.in);
+        float yourWeight, yourHeigh, yourBmi;
+        System.out.println("Please, enter your weight to Klg.:");
+        yourWeight = yourBMI.nextFloat();
+        System.out.println("Please, enter your heigh to Mtr.:");
+        yourHeigh = yourBMI.nextFloat();
+        yourBmi = yourWeight/(yourHeigh*yourHeigh);
+        System.out.println("Your BMI is: " + yourBmi);
+        yourBMI.close();
+    }
+}
